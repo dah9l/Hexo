@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hexo</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header class="hdr">
+<!--   <button id="back" class="icon-btn" aria-label="Back">←</button> -->
+    <h1>Hexo</h1>
+<!--   <button id="more" class="icon-btn" aria-label="More">⋮</button> -->
+  </header>
+
+  <main>
+    <section class="picker">
+      <!-- Hue ring canvas -->
+      <canvas id="hueRing" width="280" height="280" aria-label="Hue ring"></canvas>
+      <div id="thumb" class="thumb" role="slider" aria-valuemin="0" aria-valuemax="360" aria-valuenow="0"></div>
+    </section>
+
+    <section class="values">
+      <div class="val">
+        <input id="rgb" class="val-input" data-format="rgb" value="221, 76, 242" readonly />
+        <div class="val-label">RGB</div>
+      </div>
+      <div class="val">
+        <input id="hsl" class="val-input" data-format="hsl" value="300, 76%, 62%" readonly />
+        <div class="val-label">HSL</div>
+      </div>
+      <div class="val">
+        <input id="hex" class="val-input" data-format="hex" value="#DD4CF2" readonly />
+        <div class="val-label">HEX</div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="subttl">Several colors</h2>
+      <div id="presets" class="swatches">
+        <button class="sw" data-color="#7B6CF6" style="--c:#7B6CF6"></button>
+        <button class="sw" data-color="#5F6DA4" style="--c:#5F6DA4"></button>
+        <button class="sw" data-color="#19D3C5" style="--c:#19D3C5"></button>
+        <button class="sw" data-color="#2EBA6B" style="--c:#2EBA6B"></button>
+        <button class="sw" data-color="#F3A43A" style="--c:#F3A43A"></button>
+        <button class="sw" data-color="#F05A46" style="--c:#F05A46"></button>
+      </div>
+    </section>
+
+    <section>
+      <button id="cta" class="cta">
+        <span class="tag">A4</span>
+        <span class="txt">Your Ad Here</span>
+      </button>
+    </section>
+
+    <section>
+      <h2 class="subttl">History</h2>
+      <div id="history" class="history"></div>
+    </section>
+  </main>
+
+  <footer class="ftr">
+    <button id="eyedropper" class="eyedropper">Pick from page</button>
+    <span id="copied" class="copied" hidden>Скопировано</span>
+  </footer>
+
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

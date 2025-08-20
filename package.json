@@ -1,0 +1,24 @@
+{
+  "name": "hexo",
+  "version": "1.0.0",
+  "description": "Hexo is a minimalistic yet powerful browser extension that instantly picks and identifies any color on a web page.",
+  "main": "background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dah9l/Hexo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dah9l/Hexo/issues"
+  },
+  "homepage": "https://github.com/dah9l/Hexo#readme",
+  "devDependencies": {
+    "@types/chrome": "^0.1.4",
+    "typescript": "^5.9.2"
+  }
+}
